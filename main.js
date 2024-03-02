@@ -1,8 +1,34 @@
-import './dark-mode.css';
-
 const body = document.querySelector('html');
 
 var mode = 'dark';
+
+document.body.style += `
+#___DARK_AUTO_API_THEME_SWITCHER_BTN___ {
+  position: fixed;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 0.1rem;
+  right: 1rem;
+  top: 1rem;
+  width: max-content;
+  cursor: pointer;
+}
+
+* {
+  transition: filter 0.2s ease;
+}
+
+html[data-theme='light'] {
+  filter: invert(1) hue-rotate(180deg);
+  color: black !important;
+}
+
+svg,
+img,
+canvas {
+  filter: invert(1) hue-rotate(180deg);
+}
+`;
 
 class Theme {
   constructor() {

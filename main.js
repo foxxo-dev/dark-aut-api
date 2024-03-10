@@ -20,9 +20,10 @@ const body = document.querySelector('html');
 html[data-theme='light'] {
   filter: invert(1) hue-rotate(180deg);
 }
-html[data-theme='light] svg,
-html[data-theme='light] img,
-html[data-theme='light] canvas {
+html[data-theme='light'] svg,
+html[data-theme='light'] img,
+html[data-theme='light'] canvas,
+html[data-theme='light'] video{
   filter: invert(1) hue-rotate(180deg);
 }
 `;

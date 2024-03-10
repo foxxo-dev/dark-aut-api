@@ -8,10 +8,10 @@ const body = document.querySelector('html');
   aspect-ratio: 1;
   border-radius: 50%;
   padding: 0.1rem;
-  right: 1rem;
-  top: 1rem;
   width: max-content;
   cursor: pointer;
+  background: white;
+  color: black;
 }
 * {
   transition: filter 0.2s ease;

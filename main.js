@@ -8,10 +8,10 @@ const body = document.querySelector('html');
   aspect-ratio: 1;
   border-radius: 50%;
   padding: 0.1rem;
+  right: 1rem;
+  top: 1rem;
   width: max-content;
   cursor: pointer;
-  background: white;
-  color: black;
 }
 * {
   transition: filter 0.2s ease;
@@ -19,9 +19,9 @@ const body = document.querySelector('html');
 html[data-theme='light'] {
   filter: invert(1) hue-rotate(180deg);
 }
-html[data-theme='light'] svg,
-html[data-theme='light'] img,
-html[data-theme='light'] canvas {
+html[data-theme='light] svg,
+html[data-theme='light] img,
+html[data-theme='light] canvas {
   filter: invert(1) hue-rotate(180deg);
 }
 `;
@@ -77,3 +77,4 @@ html[data-theme='light'] canvas {
     }
 
     var theme = new Theme();
+DARK

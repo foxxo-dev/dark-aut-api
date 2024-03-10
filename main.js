@@ -19,9 +19,9 @@ const body = document.querySelector('html');
 html[data-theme='light'] {
   filter: invert(1) hue-rotate(180deg);
 }
-svg,
-img,
-canvas {
+html[data-theme='light'] svg,
+html[data-theme='light'] img,
+html[data-theme='light'] canvas {
   filter: invert(1) hue-rotate(180deg);
 }
 `;
